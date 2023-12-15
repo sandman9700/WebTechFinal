@@ -1,0 +1,46 @@
+.content {
+    margin-top: 0;
+    padding: 1rem;
+    border-radius: 50px;
+}
+
+section {
+    border-bottom: 2px dashed purple;
+    margin: 10px;
+}
+
+section#last {
+    border-bottom: none;
+}
+
+ol li {
+    float: none;
+}
+
+embed#skeleton {
+    color: black;
+    width: 350px;
+    height: 311px;
+}
+
+a[target="_blank"]:visited {
+    color: indigo;
+}
+
+a[target="_blank"]:hover {
+    color: rgb(231, 188, 44);
+}
+
+a[target="_blank"]:active {
+    color: magenta;
+}
+
+video#tutorial {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #483d8b, #51459d, #5b4daf, #6455c1, #6e5dd4, #7665dc, #7f6ee5, #8776ed, #9080ec, #988bea, #a195e9, #a99fe7);
+}

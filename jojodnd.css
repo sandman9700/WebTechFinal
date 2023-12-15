@@ -1,0 +1,315 @@
+/*CSS taken from jojodnd.com*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-display: swap;
+    color: black;
+    background-color: mediumslateblue;
+    min-width: 500px;
+}
+
+#page-title {
+    margin: 1rem;
+    text-align: center;
+}
+
+.content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    text-align: left;
+    border: 5px solid purple;
+    border-radius: 20px;
+    background-color: mediumpurple;
+}
+
+.header {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.navbar {
+    list-style-type: none;
+    background-color: purple;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 88px;
+    z-index: 2;
+}
+
+.navbar-collapse {
+    max-height: 50vh;
+}
+
+nav li {
+    float: left;
+}
+
+#home-logo {
+    width: 192px;
+    height: 80px;
+    margin-bottom: 0;
+}
+
+#home {
+    cursor: pointer;
+    padding: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.nav-item {
+    text-align: center;
+}
+
+.nav-link {
+    color: rgb(170, 155, 255);
+    padding-bottom: 0;
+    margin: .5rem;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.nomargin {
+    margin: 0!important;
+    padding: 0!important;
+}
+
+.nav-link:hover {
+    color: rgb(170, 155, 255);
+}
+
+.navigator {
+    cursor: pointer;
+}
+
+nav .navigator:hover {
+    background-color: rgb(115, 3, 115);
+}
+
+.barImg {
+    width: 40px;
+    height: 40px;
+    margin-bottom: .5rem;
+}
+
+.bi-list {
+    color: white;
+}
+
+.navbar-toggler {
+    margin-right: 12px;
+}
+
+.center {
+    text-align: center;
+    align-items: center;
+}
+
+a {
+    color: rgb(10, 0, 155);
+}
+
+a:hover {
+    color: rgb(17, 0, 255);
+}
+
+h1, h2, h3, th, .th {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-display: swap;
+}
+
+.divider {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-bottom: 2px dashed purple;
+}
+
+.table {
+    color: black;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    color: black;
+}
+
+#list {
+    position: sticky;
+    top: calc(90px + 2rem);
+    padding: 0;
+    overflow-y: hidden;
+}
+
+#list-table {
+    width: 100%;
+}
+
+#list-table thead tr {
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 2px solid purple;
+    background-color: mediumpurple;
+}
+
+#list-table tbody tr {
+    border-bottom: 2px solid black ;
+}
+
+#list-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+#list-table td {
+    padding: .5rem;
+}
+
+.list-link:hover {
+    cursor: pointer;
+    background-color: rgb(132, 97, 202);
+}
+
+#list-table .listCurrent {
+    background-color: rgb(115, 80, 185);
+}
+
+#list-table .listCurrent:hover {
+    background-color: rgb(99, 67, 161);
+}
+
+#display {
+    padding: 1.5rem;
+}
+
+.display-img {
+    max-height: 400px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.display-img img {
+    max-height: inherit;
+    border-radius: 30px;
+}
+
+
+.display-heading {
+    color: rgb(231, 188, 44);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-top: 2rem;
+}
+
+.display-title {
+    text-decoration: underline;
+    color: rgb(231, 188, 44);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-underline-offset: 2px;
+    margin-bottom: 1.5rem;
+}
+
+#display.row {
+    --bs-gutter-x: 0;
+}
+
+.simplebar-track {
+    cursor: default;
+    pointer-events: auto;
+}
+
+@media (min-width: 979px){
+    .navbar-expand-custom {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .navbar-expand-custom .navbar-nav {
+        flex-direction: row;
+    }
+    .navbar-expand-custom .dropdown-menu {
+        position: absolute;
+    }
+    .navbar-expand-custom .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    .navbar-expand-custom > .container {
+        flex-wrap: nowrap;
+    }
+    .navbar-expand-custom .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    }
+    .navbar-expand-custom .navbar-toggler {
+        display: none;
+    }
+}
+
+@media (max-width: 970px){
+    .navbar-collapse {
+        border-top: 2px solid white;
+        overflow-y: scroll;
+    }
+
+    .nav-item {
+        border-bottom: 2px dashed black;
+        text-align: left;
+    }
+
+    .nav-link {
+        padding: 5px;
+        font-size: 32px;
+        /* text-align: center; */
+    }
+
+    .barImg {
+        float: left;
+        margin-right: 2rem;
+        margin-bottom: 0;
+    }
+
+    .nav-text-break {
+        display: none;
+    }
+
+    .nav-item:last-child {
+        border-bottom: none;
+    }
+}
+
+#header {
+    min-height: 250px;
+    border-bottom: 2px purple dashed;
+}
+
+#filler {
+    height: 86px;
+}
+
+.thead {
+    font-weight: bold;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.thead {
+    font-size: 2rem;
+    border-bottom: 2px solid purple;
+    background-color: mediumpurple; 
+}
+
+.code-display {
+    color: rgb(221, 44, 80);
+    font-size: 105%;
+    background-color: rgb(222,222,222,0.3);
+  }
+  

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-bs-theme="dark">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script async src="../nav.js"></script>
+    <link rel="stylesheet" href="../jojodnd.css"/>
+    <link rel="stylesheet" href="start.css"/>
+    <title>Cool Code Stuff I Learned | Getting Started</title>
+
+
+  </head>
+    <body>
+<div id="header"></div>
+       <div class="container center">
+          <h1 id="page-title" class="display-title">Getting Started</h1>
+          <div class="row">
+              <div class="col-12">
+                  <div class="content">
+                        <section>
+                            <h2 class="display-heading">Basics</h2>
+                            <p>
+                            <a href="/html">HTML</a>, <a href="/css">CSS</a>, and <a href="/js">JavaScript</a> are considered the 3 major coding languages for beginner web developers, as they teach skills that are vital for all website languages.
+                            </p>
+                            <p>
+                            <a href="/html">HTML</a> describes the structure/contents of the website, 
+                            <a href="/css">CSS</a> describes how HTML elements are to be displayed, 
+                            and <a href="/js">JavaScript</a> to program the behavior of the website.
+                            </p>
+                        </section>
+                        <section>
+                            <h2 class="display-heading">Steps</h2>
+                            <h6 class="display-heading">Setup</h6>
+                          <ol>
+                              <li><span style="font-weight:bold;">Folder</span> - create a new folder called "My first site". This is where we will store our files for the webpage will reside.</li>
+                              <li><span style="font-weight:bold;">Notepad</span> - Open 3 windows of Notepad. save them as: index.html, style.css, and script.js respectfully. They should be saves in the "My first site" folder form step 1.</li>
+                              <li><span style="font-weight:bold;">Skeleton Code</span> - copy the <a href="/start/Skeleton Code.txt" target="_blank">Skeleton Code</a> in this <span>.txt</span> file into your index.html file</li>
+                              <li><span style="font-weight:bold;">Opening in Browser</span> - Go to the folder with you files and double click on the one called "index". Your site should be open in your browser.</li>
+                              
+                          </ol>
+                            <p>Tutorial Video for Steps 1-4<span style="padding:0;margin:0;color: black;" onclick="toggleVideo()">&nbsp;&nbsp;Show/Hide Tutorial</span></p>
+                              <script>
+                                function toggleVideo() {
+                                  $("#tutorial").toggle();
+                                  PauseVideo();
+                                }
+                                function PauseVideo() {
+                                  var video = document.getElementById("tutorial");
+                                  video.pause();
+                               }
+                             </script>
+                            </p>
+                            <video id="tutorial" src="tutorial.mp4" controls autoplay></video>
+                        </section>
+                        <section id="last">
+                            <h2 class="display-heading">Coding</h2>
+                              <p>Now you're ready to make a site. Go to <a href="/html">HTML</a> to get started</p>
+                            <small>*Windows <i class="bi bi-windows"></i> only</small>
+                        </section>
+                      </body>
+  </html>
